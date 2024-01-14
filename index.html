@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Bitter:wght@600&family=Carattere&family=Chonburi&family=Fahkwang&family=Graduate&family=Josefin+Slab:ital,wght@0,100;1,100&family=Lobster&family=Mitr:wght@300&family=Nosifer&family=Oswald:wght@300&family=Playpen+Sans:wght@300&family=Russo+One&family=Satisfy&family=Ubuntu&family=Whisper&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Bitter:wght@600&family=Chonburi&family=Fahkwang&family=Graduate&family=Josefin+Slab:ital,wght@0,100;1,100&family=Lobster&family=Mitr:wght@300&family=Nosifer&family=Oswald:wght@300&family=Playpen+Sans:wght@300&family=Russo+One&family=Ubuntu&family=Whisper&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@600&family=Chonburi&family=Josefin+Slab:ital,wght@0,100;1,100&family=Lobster&family=Nosifer&family=Oswald:wght@300&family=Playpen+Sans:wght@300&family=Russo+One&family=Ubuntu&family=Whisper&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- <a id="button"></a> -->
+    <header class="header">
+        <a href="#" class="name">Portfolio.</a>
+        <nav class="navbar" id="sidemenu">
+            <a href="#first" class="navbar button">Home</a>
+            <a href="#second" class="navbar button">About</a>
+            <a href="#third" class="navbar button">Projects</a>
+            <a href="#forth" class="navbar button">Contact</a>
+        </nav>
+        <div class="mobile-btn">
+            <i id="bars" class="fa-solid fa-bars fa-xl" onclick="openmenu()"></i>
+            <i id="cancel" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </div>
+    </header>
+    <section id="first" class="sec-1">
+        <div class="leftsection">
+            <p class="intro">Hello, It's Me</p>
+            <p class="intro"><span class="intro">Binay Padhan</span></p>
+            <p class="intro">And I'm a <span class="fd">Frontend Developer</span></p>
+            <div class="intro social">
+                <ul>
+                    <li><a href="https://www.facebook.com/binay.padhan.549?mibextid=eHce3h" target="_blank"><i
+                                class="fa-brands fa-facebook fa-sm" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/_binaypadhan_/" target="_blank"><i class="fa-brands fa-instagram fa-sm"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/binay-padhan-89508b259" target="_blank"><i
+                                class="fa-brands fa-linkedin fa-sm" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/BinayPadhan" target="_blank"><i class="fa-brands fa-github fa-sm"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://wa.me/919861913569" target="_blank"><i class="fa-brands fa-whatsapp fa-sm" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightsection"><img src="image/myphoto.png" width="400px" height="400px"></div>
+    </section>
+    <section id="second" class="sec-2">
+        <div class="about">
+            <div class="container">
+                <div class="about-img"><img src="image/p-2.jpg" width="300px" height="300px"></div>
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello, I'm Binay Padhan, a passionate web developer with a knack for turning ideas into reality
+                        through elegant and efficient code. Currently based in Sambalpur, I hold a Bachelor's degree in
+                        Information Technology from Veer Surendra Sai University of Technology,Burla. I am an organised,
+                        efficient and hard working person, and am willing to discover and accept new ideas which can be
+                        put
+                        into practice effectively.</p>
+                    <div class="titles">
+                        <a class="titles-link active-link" onclick="opentab('skills')">Skills</a>
+                        <a class="titles-link" onclick="opentab('education')">Education</a>
+                    </div>
+                    <div class="links-content active-content" id="skills">
+                        <ul>
+                            <li><span>Progamming Language:</span> <br> C, C++, Python, Javascript</li>
+                            <li><span>Web Development:</span> <br>
+                                <div><label for="HTML">HTML :</label><br>
+                                    <progress class="progressbar" id="HTML" value="70" max="100"> 70% </progress>
+                                </div>
+                                <div>
+                                    <label for="CSS">CSS :</label><br>
+                                    <progress class="progressbar" id="CSS" value="65" max="100"> 65% </progress>
+                                </div>
+                                <div><label for="Javascript">Javascript :</label><br>
+                                    <progress class="progressbar" id="Javascript" value="35" max="100"> 35% </progress>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="links-content" id="education">
+                        <ul>
+                            <li><span>Graduation (2022-26)</span><br>Veer Surendra Sai University of Technology, Burla,
+                                Sambalpur</li>
+                            <li><span>Intermediate (2019-21)</span><br>Aims College of +2 Science, Sambalpur</li>
+                            <li><span>Matriculation</span> <br>SSVM,Bheden, Bargarh</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="third" class="sec-3">
+        <h2>PROJECTS</h2>
+        <div class="projects-container">
+            <div class="projects-card one">
+                <div class="projects-img"><img src="image/project 1.png"></div>
+                <div class="project-detail"><h3>Basic Calculator</h3>
+                    <p>It is a simple calculator web application using HTML, CSS, and JavaScript. The calculator allows
+                        users to perform basic arithmetic operations such as addition, subtraction, multiplication, and
+                        division.</p>
+                    <div class="webLink"><a href="https://binaypadhan.github.io/WebDev/Basic%20Calculater/" target="_blank">Check it out</a></div></div>
+            </div>
+            <div class="projects-card two">
+                <div class="projects-img"><img src="image/project 3.png"></div>
+                <div class="project-detail"><h3>Weather App</h3>
+                    <p>This is a web-based weather application using HTML, CSS, and JavaScript. The app fetches real-time
+                        weather data from a public API and displays it in a user-friendly interface. Users can enter a
+                        location to retrieve current weather conditions, temperature, and a forecast.</p>
+                    <div class="webLink"><a href="https://binaypadhan.github.io/WebDev/Weather%20App/" target="_blank">Check it out</a></div></div>
+            </div>
+            <div class="projects-card three">
+                <div class="projects-img"><img src="image/project 2.png">
+                </div>
+                <div class="project-detail"><h3>To Do List</h3>
+                    <p>To-Do List website built in HTML, CSS, and JavaScript. Users can add, edit, and remove tasks.</p>
+                    <div class="webLink"><a href="https://binaypadhan.github.io/WebDev/To-Do%20List/" target="_blank">Check it out</a></div></div>
+            </div>
+        </div>
+    </section>
+    <section id="forth" class="sec-4">
+        <div class="contact">
+            <div class="contact-container">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>binaypadhan26@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>(+91) 9861913569</p>
+                    <div class="contact-social">
+
+                        <a href="https://www.facebook.com/binay.padhan.549?mibextid=eHce3h" target="_blank"><i
+                                class="fa-brands fa-facebook fa-xl" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/_binaypadhan_/" target="_blank"><i class="fa-brands fa-instagram fa-xl"
+                                aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/binay-padhan-89508b259" target="_blank"><i
+                                class="fa-brands fa-linkedin fa-xl" aria-hidden="true"></i></a>
+                        <a href="https://github.com/BinayPadhan" target="_blank"><i class="fa-brands fa-github fa-xl"
+                                aria-hidden="true"></i></a>
+                        <a href="https://wa.me/919861913569" target="_blank"><i class="fa-brands fa-whatsapp fa-xl" aria-hidden="true"></i></a>
+
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="email" name="email" placeholder="Your email address" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2024 Designed by BINAY; All rights reserved</p>
+    </footer>
+ <script src="script.js"></script>
+</body>
+
+</html>
