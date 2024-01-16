@@ -602,13 +602,12 @@ section .projects-container .two {
     right: 0;
     top: 5rem; 
     overflow: auto;
-    background-color: crimson;
+    background-color: aqua;
     display: none;
   }
   .header nav a{
     padding: 27px 45px;
     text-align: center;
-    transition: right 0.5s;
   }
   .header #cancel{
     display: none;
